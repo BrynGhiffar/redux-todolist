@@ -1,10 +1,12 @@
 import { configureStore } from "@reduxjs/toolkit";
 import counterReducer from "../features/counter/counter-slice";
+import todoListReducer from "../features/todolist/todolist-slice";
 
 export const store = configureStore({
     reducer: {
         // state.counter field
-        counter: counterReducer
+        counter: counterReducer,
+        todoList: todoListReducer,
     }
 });
 
